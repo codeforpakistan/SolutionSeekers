@@ -1,3 +1,4 @@
+import 'package:faryaad/screens/user_type_selection_screen.dart';
 import 'package:faryaad/utils/global.dart';
 import 'package:faryaad/widgets/circular_button_widget.dart';
 import 'package:faryaad/widgets/circular_input_widget.dart';
@@ -78,6 +79,11 @@ class _SignupScreenState extends State<SignupScreen> {
                     CircularButtonWidget(
                       text: "GET STARTED",
                       color: ThemeConstants.background,
+                      press: () {
+                        Navigator.of(context).push(MaterialPageRoute(
+                            builder: (BuildContext context) =>
+                                SelectUserTypeScreen()));
+                      },
                     ),
                     heightBetweenWidgets(),
                     Text(
