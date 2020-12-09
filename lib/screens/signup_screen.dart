@@ -32,6 +32,8 @@ class _SignupScreenState extends State<SignupScreen> {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   mainAxisSize: MainAxisSize.max,
                   children: [
+                    heightBetweenWidgets(),
+                    heightBetweenWidgets(),
                     HeadingWidget(heading: "Create your account"),
                     heightBetweenWidgets(),
                     CircularButtonWidget(

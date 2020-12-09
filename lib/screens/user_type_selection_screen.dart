@@ -1,3 +1,4 @@
+import 'package:faryaad/screens/home_screen.dart';
 import 'package:faryaad/utils/global.dart';
 import 'package:faryaad/widgets/circular_button_widget.dart';
 import 'package:faryaad/widgets/heading_widget.dart';
@@ -105,6 +106,9 @@ class _SelectUserTypeScreenState extends State<SelectUserTypeScreen> {
                             return;
                           } else {
                             //Navigate here
+                            Navigator.of(context).push(MaterialPageRoute(
+                                builder: (BuildContext context) =>
+                                    HomeScreen()));
                           }
                         },
                       ),

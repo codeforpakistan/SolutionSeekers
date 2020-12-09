@@ -1,5 +1,5 @@
+import 'package:faryaad/screens/home_screen.dart';
 import 'package:faryaad/screens/signup_screen.dart';
-import 'package:faryaad/screens/user_type_selection_screen.dart';
 import 'package:faryaad/utils/global.dart';
 import 'package:faryaad/widgets/circular_button_widget.dart';
 import 'package:faryaad/widgets/circular_input_widget.dart';
@@ -71,9 +71,11 @@ class _LoginScreenState extends State<LoginScreen> {
                       text: "LOGIN",
                       color: ThemeConstants.background,
                       press: () {
-                        Navigator.of(context).push(MaterialPageRoute(
-                            builder: (BuildContext context) =>
-                                SelectUserTypeScreen()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (BuildContext context) =>
+                                    HomeScreen()));
                       },
                     ),
                     heightBetweenWidgets(),
