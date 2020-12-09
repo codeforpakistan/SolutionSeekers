@@ -1,16 +1,13 @@
 # faryaad
 
-A new Flutter project.
+This project aims to ccess to financial services such as transaction of funds or borrowing of loan for under privileged ones in cases of medical emergencies specifically always remains difficult.
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project is a Flutter application which is currently focusing on android app. This will in future be targeting iOS app as well.
 
-A few resources to get you started if this is your first Flutter project:
+## How to run
 
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
+Along with the source code, we have attached the apk file. You need to install that apk file in your mobile phone in order to run this app
 
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
