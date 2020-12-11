@@ -1,5 +1,4 @@
 import 'dart:async';
-
 import 'package:faryaad/ui/screens/login_screen.dart';
 import 'package:faryaad/utils/global.dart';
 import 'package:flutter/material.dart';
