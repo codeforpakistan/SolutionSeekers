@@ -1,9 +1,9 @@
-import 'package:faryaad/screens/home_screen.dart';
-import 'package:faryaad/screens/signup_screen.dart';
+import 'package:faryaad/ui/screens/home_screen.dart';
+import 'package:faryaad/ui/screens/signup_screen.dart';
 import 'package:faryaad/utils/global.dart';
-import 'package:faryaad/widgets/circular_button_widget.dart';
-import 'package:faryaad/widgets/circular_input_widget.dart';
-import 'package:faryaad/widgets/heading_widget.dart';
+import 'package:faryaad/ui/widgets/circular_button_widget.dart';
+import 'package:faryaad/ui/widgets/circular_input_widget.dart';
+import 'package:faryaad/ui/widgets/heading_widget.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';

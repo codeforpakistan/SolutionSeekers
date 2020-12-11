@@ -1,4 +1,4 @@
-import 'package:faryaad/screens/splash_screen.dart';
+import 'package:faryaad/ui/screens/splash_screen.dart';
 import 'package:flutter/material.dart';
 
 void main() {

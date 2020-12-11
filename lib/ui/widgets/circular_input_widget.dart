@@ -1,5 +1,5 @@
+import 'package:faryaad/ui/widgets/text_field_container.dart';
 import 'package:faryaad/utils/global.dart';
-import 'package:faryaad/widgets/text_field_container.dart';
 import 'package:flutter/material.dart';
 
 class CircularInputWidget extends StatefulWidget {

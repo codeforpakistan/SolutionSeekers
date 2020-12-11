@@ -1,4 +1,4 @@
-import 'package:faryaad/screens/home_screen.dart';
+import 'package:faryaad/ui/screens/home_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 

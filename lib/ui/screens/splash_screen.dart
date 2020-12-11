@@ -1,6 +1,6 @@
 import 'dart:async';
 
-import 'package:faryaad/screens/login_screen.dart';
+import 'package:faryaad/ui/screens/login_screen.dart';
 import 'package:faryaad/utils/global.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
