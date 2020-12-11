@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 
 class BackButtonWidget extends StatelessWidget {
   final bool isLoginPage;
-  BackButtonWidget({this.isLoginPage = false});
+  final Color color;
+  BackButtonWidget({this.isLoginPage = false, this.color = Colors.white});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +12,7 @@ class BackButtonWidget extends StatelessWidget {
         if (!isLoginPage) Navigator.of(context).pop();
       },
       textColor: Colors.black,
-      color: Colors.white,
+      color: color,
       child: Icon(
         Icons.arrow_back,
         size: 20,

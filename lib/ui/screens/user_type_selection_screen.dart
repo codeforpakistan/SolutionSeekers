@@ -1,4 +1,4 @@
-import 'package:faryaad/ui/screens/home_screen.dart';
+import 'package:faryaad/ui/screens/user_specific_signup_screen.dart';
 import 'package:faryaad/utils/global.dart';
 import 'package:faryaad/ui/widgets/circular_button_widget.dart';
 import 'package:faryaad/ui/widgets/heading_widget.dart';
@@ -108,7 +108,8 @@ class _SelectUserTypeScreenState extends State<SelectUserTypeScreen> {
                             //Navigate here
                             Navigator.of(context).push(MaterialPageRoute(
                                 builder: (BuildContext context) =>
-                                    HomeScreen()));
+                                    UserSpecificSignupScreen(
+                                        currentSelection: currentSelection)));
                           }
                         },
                       ),
@@ -124,5 +125,3 @@ class _SelectUserTypeScreenState extends State<SelectUserTypeScreen> {
     ));
   }
 }
-
-enum UserType { NONE, NGO, DOCTOR, DONOR }

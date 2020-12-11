@@ -20,3 +20,5 @@ Widget smallHeightBetweenWidgets() {
 Widget widthBetweenWidgets() {
   return SizedBox(width: 10);
 }
+
+enum UserType { NONE, NGO, DOCTOR, DONOR }
