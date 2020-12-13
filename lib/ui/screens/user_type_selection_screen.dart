@@ -1,3 +1,4 @@
+import 'package:faryaad/ui/screens/home_screen.dart';
 import 'package:faryaad/ui/screens/user_specific_signup_screen.dart';
 import 'package:faryaad/utils/global.dart';
 import 'package:faryaad/ui/widgets/circular_button_widget.dart';
@@ -105,11 +106,18 @@ class _SelectUserTypeScreenState extends State<SelectUserTypeScreen> {
 
                             return;
                           } else {
-                            //Navigate here
-                            Navigator.of(context).push(MaterialPageRoute(
-                                builder: (BuildContext context) =>
-                                    UserSpecificSignupScreen(
-                                        currentSelection: currentSelection)));
+                            if (currentSelection == UserType.DONOR) {
+                              Navigator.push(
+                                  context,
+                                  MaterialPageRoute(
+                                      builder: (BuildContext context) =>
+                                          HomeScreen()));
+                            } else {
+                              Navigator.of(context).push(MaterialPageRoute(
+                                  builder: (BuildContext context) =>
+                                      UserSpecificSignupScreen(
+                                          currentSelection: currentSelection)));
+                            }
                           }
                         },
                       ),

@@ -1,5 +1,7 @@
+import 'package:faryaad/ui/screens/home_screen.dart';
 import 'package:faryaad/ui/widgets/back_button_widget.dart';
 import 'package:faryaad/ui/widgets/circular_input_widget.dart';
+import 'package:faryaad/ui/widgets/text_field_container.dart';
 import 'package:faryaad/utils/global.dart';
 import 'package:faryaad/ui/widgets/circular_button_widget.dart';
 import 'package:flutter/material.dart';
@@ -62,7 +64,9 @@ class _UserSpecificSignupScreenState extends State<UserSpecificSignupScreen> {
               heightBetweenWidgets(),
               CircularButtonWidget(
                 text: "SIGN UP",
-                press: () {},
+                press: () {
+                  redirectToHomePage();
+                },
               )
             ],
           ),
@@ -95,16 +99,42 @@ class _UserSpecificSignupScreenState extends State<UserSpecificSignupScreen> {
       children: [
         heightBetweenWidgets(),
         CircularInputWidget(
-          hintText: "Email address",
+          hintText: "Enter PMDC Number",
           hintTextColor: Colors.grey,
         ),
         smallHeightBetweenWidgets(),
-        CircularInputWidget(
-          hintText: "Password",
-          hintTextColor: Colors.grey,
-        ),
+        TextFieldContainer(
+          child: DropdownButton<String>(
+            isExpanded: true,
+            underline: SizedBox(),
+            hint: Text(
+              "Select Hospital",
+              style: TextStyle(color: Colors.grey),
+            ),
+            items: <String>[
+              'Hospital A',
+              'Hospital B',
+              'Hospital C',
+              'Hospital D'
+            ].map((String value) {
+              return new DropdownMenuItem<String>(
+                value: value,
+                child: new Text(
+                  value,
+                  style: TextStyle(color: Colors.grey),
+                ),
+              );
+            }).toList(),
+            onChanged: (_) {},
+          ),
+        )
       ],
     );
+  }
+
+  void redirectToHomePage() {
+    Navigator.push(context,
+        MaterialPageRoute(builder: (BuildContext context) => HomeScreen()));
   }
 
   Widget getDonorFields() {
@@ -113,12 +143,7 @@ class _UserSpecificSignupScreenState extends State<UserSpecificSignupScreen> {
       children: [
         heightBetweenWidgets(),
         CircularInputWidget(
-          hintText: "Email address",
-          hintTextColor: Colors.grey,
-        ),
-        smallHeightBetweenWidgets(),
-        CircularInputWidget(
-          hintText: "Password",
+          hintText: "Enter Blood Group",
           hintTextColor: Colors.grey,
         ),
       ],
