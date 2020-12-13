@@ -10,7 +10,7 @@ This project is a Flutter application which is currently focusing on android app
 
 Along with the source code, we have attached the apk file named "faryaad.apk". You need to install that apk file in your mobile phone in order to run this app. Moreover, below is another link to install this app in your android app.
 
-link:  https://i.diawi.com/ejTQ1A
+link:  https://i.diawi.com/zutCau
 
 
 
